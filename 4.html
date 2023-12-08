@@ -3,25 +3,97 @@
 <head>
     <title>Jewoong의 자기개발</title>
     <meta charset="utf-8">
+    <style>
+        a {
+            color : black;
+            text-decoration: none;
+        }
+
+        #now{
+            color: red;
+        }
+
+        .nnow{
+            color: grey;
+        }
+
+        h1{
+            font-size:40px;
+            margin:0;
+            padding: 15px;
+            border-bottom: 1px solid black;
+        }
+
+        #grid ol{
+            border-right: 1px solid gray;
+            width: 80px;
+            margin: 0;
+            padding: 20px;
+            padding-left:33px;
+        }
+
+        #grid{
+            display: grid;
+            grid-template-columns: 150px 1fr;
+        }
+        #grid #article{
+            padding-left: 10px;
+        }
+
+        @media(max-width:700px){
+            #grid{
+                display: block;
+            }
+            #grid ol{
+                border-right:none;
+            }
+
+            h1 {
+                border-bottom:none;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <h1><a href="index.html">안제웅의 미래설계</a></h1>
-    <ol> 
-        <li><a href="1.html">헬스</a></li>
-        <li><a href="2.html">제테크</a></li>
-        <li><a href="3.html">컴퓨터</a></li>
-        <li><a href="4.html">자기개발</a></li>
-    </ol>
+    
+    <div id="grid">
+    
+        <ol> 
+            <li><a href="1.html" class = "nnow">헬스</a></li>
+            <li><a href="2.html" class= "nnow">제테크</a></li>
+            <li><a href="3.html" class= "nnow">컴퓨터</a></li>
+            <li><a href="4.html" class= "nnow" id = "now">자기개발</a></li> 
+        </ol>
 
-    <h2>Jewoong의 자기개발</h2>
-        성공하고싶다는 강한 마음을 지키기 위한 과정<br>
-        <p>
-            <ol>
-                <li>자기개발 도서 독후감</li>
-                <li>매일 적는 성공일기</li>
-            </ol>
-        </p> 
+        <div id = "article">
+            <h2>Jewoong의 자기개발</h2>
+                성공하고싶다는 강한 마음을 지키기 위한 과정
+                <ul>
+                
+                    <li>자기개발 도서 독후감</li> <br>
 
+                    <ul>
+                        <li><a href="https://product.kyobobook.co.kr/detail/S000210830482"
+                            title="더마인드 정보 링크(교보문고)" target="_blank">
+                            <strong>더마인드 - 하와이 대저택</strong>
+                        </a></li> <br>
+                        <a href="https://product.kyobobook.co.kr/detail/S000210830482"
+                        title="더마인드 정보 링크(교보문고)" target="_blank"><img src="더마인드사진.jpg" width ="200"></a>
+
+                        <p>
+                            서평: 이 책은 제일 최근에 읽은 자기개발서이다. 책을 읽던 도중 그전에 읽었던 자기개발서와 매우
+                            결이 비슷하고 같은 내용을 말하는 것 같아 흥미로웠다. 전에 읽은 '리얼리티 트랜서핑'이라는 책도 끌어당김의
+                            법칙, 간절히 바라면 인생을 성공 트랙으로 옮겨놓을 수 있다는 내용이 담긴 책이였다. 
+                        </p>
+        
+                    </ul>
+                
+                    <li>매일 적는 성공일기</li>
+                
+                </ul> 
+        </div>
+    </div>
 </body>
 </html>
